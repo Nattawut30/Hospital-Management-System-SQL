@@ -1,22 +1,22 @@
-# <p align="center">🏥 SQL: Hospital Management System 🧬<p/>
+# <p align="center"> SQL: Hospital Management System <p/>
 <br>**Nattawut Boonnoon**<br/>
-💼 LinkedIn: www.linkedin.com/in/nattawut-bn
-<br>📧 Email: nattawut.boonnoon@hotmail.com<br/>
-📱 Phone: (+66) 92 271 6680
+- LinkedIn: www.linkedin.com/in/nattawut-bn
+- Email: nattawut.boonnoon@hotmail.com
+- Phone: (+66) 92 271 6680
 
-***📋 Overview***
+***Overview***
 -
 My personal project is building a functional hospital management database using MySQL that tackles three operational challenges in modern healthcare facilities:
 
-1. Patient Care Workflows = Tracks patient admissions, appointments, treatments, and medical histories in real-time to reduce wait times and improve care coordination.
-2. Resource Allocation = Manages doctors, nurses, equipment, and room assignments to maximize utilization and minimize operational bottlenecks.
-3. Financial Operations = Monitors billing, insurance claims, and payment processing to reduce revenue leakage and improve cash flow.
+- Patient Care Workflows: Tracks patient admissions, appointments, treatments, and medical histories in real-time to reduce wait times and improve care coordination.
+- Resource Allocation: Manages doctors, nurses, equipment, and room assignments to maximize utilization and minimize operational bottlenecks.
+- Financial Operations: Monitors billing, insurance claims, and payment processing to reduce revenue leakage and improve cash flow.
 
 **Why It Matters:** Hospitals struggle with fragmented data systems that lead to scheduling conflicts, unused resources, and billing errors costing millions annually. I hope this database acts as a centralized backbone example, giving administrators clear visibility into operations so they can make better decisions that directly impact outcomes.
 
-***⭐ Database Architecture***
+***Database Architecture***
 -
-**📂 Modules:**
+**Modules:**
 - Patient Management: Complete demographics, medical records, and insurance information.
 - Appointment Scheduling: A collaborative department scheduling system with status tracking.
 - Staff management includes personnel data, department duties, and performance indicators
@@ -24,7 +24,7 @@ My personal project is building a functional hospital management database using 
 - Ward/Bed Management: Real-time bed occupancy and patient admission procedures.
 - Inventory Management: Track medical supplies with automated reorder alerts.
 
-**📊 Statistics:**
+**Statistics:**
 
 - 13 Interconnected Tables
 - 150 Patient Records
@@ -33,13 +33,13 @@ My personal project is building a functional hospital management database using 
 - 5,000 Medical History Records
 - 3,500 Prescriptions
 - 180 Hospital Beds across 12 wards
-- ~1,000 Billing Transactions
+- 1,000 Billing Transactions
 
-***🗂️ Relationship Diagram***
+***Relationship Diagram***
 -
 ![Demo Diagram](Nattawut_HMS_Diagram.jpg)
 
-***🎯 Problem-Solving Approach***
+***Solutions Approach***
 -
 | Issues | SQL solution | Business Impact |
 | :---------- | :-----------: | -----------: |
@@ -50,7 +50,7 @@ My personal project is building a functional hospital management database using 
 | Patient Payment Collection | Cohort comparison using UNION | Finding at-risk accounts, improves cash flow |
 | Appointment NOT showing | CASE-based percentage calculations | Controls wasted slots, better decision-making | 
 
-# <p align="center">📥 Sample Queries 📊<p/>
+# <p align="center">Sample Queries<p/>
 **Prerequisites:**
 
 https://www.mysql.com/
@@ -79,7 +79,7 @@ https://www.mysql.com/
    mysql -u root -p hospital_management < queries/Nattawut_HMS_Analytics.sql
    `````
 
-***💉 Basic Level***
+***Basic Level***
 -
 **Query Example: Patient Emergency Contact Lookup**
 - PROBLEM: ER needs immediate patient contact info for unconscious patients
@@ -105,7 +105,7 @@ ORDER BY
     patient_id;
 `````
 
-***💊 Intermediate Level***
+***Intermediate Level***
 -
 **Query Example: Department Revenue Analysis (Last Quarter)**
 - PROBLEM: Financial planning needs to know which departments drive revenue
@@ -136,7 +136,7 @@ ORDER BY
     total_revenue DESC;
 `````
 
-***⚕️ Advanced Level***
+***Advanced Level***
 -
 **Query Example: Patients With vs Without Insurance (UNION)**
 - PROBLEM: Uninsured patients have different billing and care coordination needs
@@ -179,31 +179,31 @@ WHERE
     p.insurance_provider_id IS NULL;
 `````
 
-# <p align="center">🎓 Key Learning Outcomes 📚<p/>
+# <p align="center">Key Learning Outcomes<p/>
 
 **Technical Expertise:**
 
-- ✅ Database normalization (3NF)
-- ✅ Complex JOIN operations (INNER, LEFT)
-- ✅ Window functions (LEAD for time-series analysis)
-- ✅ Common Table Expressions (CTEs) for query organization
-- ✅ Set operators (UNION for cohort comparison)
-- ✅ Date/time manipulation and calculations
-- ✅ Conditional aggregation with CASE statements
-- ✅ Subqueries and correlated subqueries
-- ✅ Performance optimization with indexes
-- ✅ Data integrity with constraints (CHECK, FOREIGN KEY)
+- Database normalization (3NF)
+- Complex JOIN operations (INNER, LEFT)
+- Window functions (LEAD for time-series analysis)
+- Common Table Expressions (CTEs) for query organization
+- Set operators (UNION for cohort comparison)
+- Date/time manipulation and calculations
+- Conditional aggregation with CASE statements
+- Subqueries and correlated subqueries
+- Performance optimization with indexes
+- Data integrity with constraints (CHECK, FOREIGN KEY)
 
 **Business Acumen:**
 
-- 📈 Healthcare quality metrics (readmission rates, length of stay)
-- 💰 Revenue cycle management (claims, denials, collections)
-- 🏥 Clinical workflows (admissions, discharges, prescriptions)
-- 👥 Resource optimization (staff workload, bed capacity, inventory)
-- 📊 Operational analytics for decision-making
+- Healthcare quality metrics (readmission rates, length of stay)
+- Revenue cycle management (claims, denials, collections)
+- Clinical workflows (admissions, discharges, prescriptions)
+- Resource optimization (staff workload, bed capacity, inventory)
+- Operational analytics for decision-making
 
 **Acknowledgments:**
 
-- 🚑 Healthcare domain knowledge inspired by real-world hospital systems
-- 👨🏼‍⚕️ SQL best practices from industry standards
-- 👩🏼‍⚕️ Database design principles following E.F. Codd's relational model
+- Healthcare domain knowledge inspired by real-world hospital systems
+- SQL best practices from industry standards
+- Database design principles following E.F. Codd's relational model
